@@ -1,0 +1,264 @@
+@import "main_var";
+
+body {
+  background: @bodyBackroundUrl;
+  font-family: @mainFont;
+}
+
+header {
+  .widthCentered(960px);
+  text-align: center;
+
+    p {
+      font: 400 2.5em/1.5 @paragraphFont;
+      color: @mainTextColor;
+    }
+
+    img {
+      display: block;
+      max-width: 400px;
+      margin: auto;
+      margin-top:10px;
+    }
+
+    nav {
+      margin: 18px 0;
+      border-bottom: 4px solid @colorWhite;
+      padding-bottom: 5px;
+    }
+
+    li {
+      display: inline;
+      border-right: 1px solid @colorWhite;
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        font-size: 1.8em;
+        color:@linkTextColor;
+        text-decoration: none;
+        padding: 0 10px;
+        &:hover{
+          color:@linkHoverColor;
+        }
+      }
+    }
+}//end header
+
+footer {
+  .widthCentered(960px);
+  text-align: center;
+  font-weight: 700;
+
+  nav {
+    margin: 18px 0 ;
+    padding-top: 10px;
+    border-top:4px solid @colorWhite;
+  }
+
+  li{
+    display: inline;
+    border-right: 1px dotted @colorWhite;
+
+    a {
+      color: #af2411;
+      padding: 0 10px;
+      &:hover {
+        color:#FFF;
+        background-color: #666;
+      }
+    }
+  }
+}//end footer
+
+#pages {
+  .widthCentered(960px);
+  margin-top: 30px;
+}
+
+.handheld, #tabs {
+  display: none;
+}
+
+.foodlist {
+  float: left;
+  width: 320px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border: 4px solid white;
+      position: relative;
+      float: left;
+      box-shadow: 0 5px 10px rgba(1,0,0,0.7);
+    }
+
+    h2 {
+      font: 400 2.2em/1em @h2Font;
+      color:@h2Colors;
+      display: block;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    }
+
+    p {
+      padding: 5px 50px 10px 0;
+      font: 700 1em/1em @mainFont;
+      font-style: italic;
+      color: #540502;
+    }
+
+    li {
+      padding: 10px;
+      &:hover{
+        cursor: pointer;
+        img {
+          padding-left: 1px;
+        }
+
+        .photoname {
+          color: @linkTextColor;
+        }
+      }
+
+    }
+
+    .info {
+      width: 200px;
+      float: left;
+
+      .photoname {
+        font:400 1.3em/1em @priceFont;
+        color:#674;
+        display:block;
+        text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+        padding-left: 10px;
+      }
+
+      .description {
+        display:block;
+        padding-left: 10px;
+        font-size: 1.1em;
+        line-height: 1em;
+      }
+
+      .price {
+        font:400 1.2em/1.3em @priceFont;
+        color: #A21;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        display: block;
+        padding: 5px 0 10px 10px;
+      }
+    }
+}//end fooflist
+
+#appetizers, #sides {
+  .rotate(-2deg);
+}
+
+#entrees {
+  .rotate(2deg);
+}
+
+#aboutus {
+  img {
+    width: 600px;
+    display: block;
+    float: left;
+    border: 10px solid #fff;
+   .rotate(-2deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 5px 10px #000;
+  }
+
+  .content {
+    width: 300px;
+    float:left;
+  }
+
+  h2{
+    font:normal 1.8em/1em @priceFont;
+    color:@h2Colors;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    padding-left: 20px;
+  }
+
+  p{
+    float: left;
+    padding: 5px 20px;
+  }
+}//end about us
+
+#map {
+  position: relative;
+  .widthCentered(500px);
+  text-align: center;
+
+  p{
+    font-size: 1.7em;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+  }
+}
+
+.fullScreen(@backUrl,@position:fixed){
+  position: @position;
+  left: 0;
+  top:0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: @backUrl no-repeat center center;
+}
+
+#spinner {
+  .fullScreen(url("/assets/images/icons/spinner.gif"),absolute);
+}
+
+#clicktoreturn {
+ .fullScreen(url("/assets/images/clicktoreturn.png"),absolute);
+}
+
+#overlay {
+  .fullScreen(#000);
+
+  img {
+    display:block;
+    margin:0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .info {
+    display: block;
+    .widthCentered(100%);
+    position: absolute;
+    left:0;
+    bottom:0;
+    color:#FFF;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .photoname{
+    display: block;
+    .widthCentered(380px);
+    font-size: 1.8em;
+    font-weight:bold;
+    display: block;
+    color: #FFE486;
+  }
+
+  .description {
+    display: block;
+    .widthCentered(380px);
+  }
+
+  .price {
+    display: block;
+    .widthCentered(380px);
+    font-weight:bold;
+    font-size: 1.5em;
+    text-align:right;
+  }
+}

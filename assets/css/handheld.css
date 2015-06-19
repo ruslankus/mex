@@ -1,0 +1,54 @@
+.hide {
+  display: none;
+}
+.hideBlocks {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.nav {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.header nav {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.header img {
+  width: 300px;
+}
+#pages {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+footer {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+footer nav {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+}
+#overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#overlay .info {
+  display: none;
+}
