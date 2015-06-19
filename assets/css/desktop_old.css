@@ -1,0 +1,292 @@
+body {
+    background: url("/assets/images/background_wood.jpg");
+    font-family: Rokkitt, "Times New Roman", Times, serif;
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header p {
+    font: 400 2.5em/1.5em 'Leckerli One', Arial, Helvetica, sans-serif;
+    color: #730;
+}
+
+header img {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+header nav {
+    margin: 18px 0;
+    border-bottom: 4px solid #000;
+    padding-bottom: 5px;
+}
+
+header li {
+    display: inline;
+    border-right: 1px solid #000000;
+}
+header li:last-child {
+    border-right: none;
+}
+
+header li a {
+    font-size: 1.8em;
+    color:#A21;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+header nav li a:hover {
+    color:#e41;
+}
+
+/*- Start Footer -*/
+footer {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+footer nav {
+    margin: 18px 0 ;
+    padding-top: 10px;
+    border-top:4px solid #000000;
+}
+
+footer li {
+    display: inline;
+    border-right: 1px dotted #000000;
+}
+
+footer li a {
+    color: #af2411;
+    padding: 0 10px;
+}
+
+footer li a:hover {
+    color:#FFF;
+    background-color: #666;
+}
+
+/*-- End footer ---*/
+#pages {
+    width: 960px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+
+.handheld, #tabs {
+    display: none;
+}
+
+.foodlist {
+    float: left;
+    width: 320px;
+}
+
+.foodlist img {
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+    position: relative;
+    float: left;
+    box-shadow: 0 5px 10px rgba(1,0,0,0.7);
+}
+
+.foodlist h2 {
+    font: 400 2.2em/1em 'Leckerli One', Arial, Helvetica, sans-serif;
+    color:#A21;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.foodlist p {
+    padding: 5px 50px 10px 0;
+    font: 700 1em/1em Rokkitt, "Times New Roman", Times, serif ;
+    font-style: italic;
+    color: #540502;
+}
+
+.foodlist li {
+    padding: 10px;
+}
+
+.foodlist li:hover {
+    cursor: pointer;
+}
+
+.foodlist li:hover img {
+    padding-left: 1px;
+}
+
+.foodlist .info {
+    width: 200px;
+    float: left;
+}
+
+.foodlist .info .photoname {
+    font:400 1.3em/1em 'Luckiest Guy', Helvetica, Arial, sans-serif;
+    color:#674;
+    display:block;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+    padding-left: 10px;
+}
+
+.foodlist .info .description {
+    display:block;
+    padding-left: 10px;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+
+.foodlist .info .price {
+    font:400 1.2em/1.3em 'Luckiest Guy', Helvetica, Arial, sans-serif;
+    color: #A21;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    display: block;
+    padding: 5px 0 10px 10px;
+}
+
+.foodlist li:hover .photoname {
+    color:#A21;
+}
+
+#appetizers, #sides {
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
+#entrees {
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+}
+
+/*-- about us ---*/
+#aboutus img {
+    width: 600px;
+    display: block;
+    float: left;
+    border: 10px solid #fff;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 5px 10px #000;
+}
+
+#aboutus .content {
+    width: 300px;
+    float:left;
+}
+
+#aboutus h2 {
+    font:normal 1.8em/1em 'Luckiest Guy', Helvetica, Arial, sans-serif;
+    color:#A21;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    padding-left: 20px;
+}
+
+#aboutus p {
+    float: left;
+    padding: 5px 20px;
+}
+
+/*-- end about us --*/
+/*-- map --*/
+#map {
+    position: relative;
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#map p {
+    font-size: 1.7em;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+}
+
+/*-- end map page --*/
+#spinner {
+    position: absolute;
+    left: 0;
+    top:0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/images/icons/spinner.gif") no-repeat center center;
+}
+
+#clicktoreturn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/images/clicktoreturn.png") center center no-repeat;
+}
+
+#overlay {
+    background: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#overlay img {
+    display:block;
+    margin:0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#overlay .info {
+    display: block;
+    width:100%;
+    margin:0 auto;
+    position: absolute;
+    left:0;
+    bottom:0;
+    color:#FFF;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#overlay .photoname {
+    display: block;
+    width:380px;
+    margin:0 auto;
+    font-size: 1.8em;
+    font-weight:bold;
+    display: block;
+    color: #FFE486;
+}
+
+#overlay .description {
+    display: block;
+    width:380px;
+    margin:0 auto;
+}
+
+#overlay .price {
+    display: block;
+    width:380px;
+    margin:0 auto;
+    font-weight:bold;
+    font-size: 1.5em;
+    text-align:right;
+}
+/*-- end of overlay --*/
